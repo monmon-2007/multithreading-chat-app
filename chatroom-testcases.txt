@@ -1,0 +1,83 @@
+
+						|************************************|				     
+						:TEST CASES MULTITHREADING CHAT ROOM :
+						|************************************|
+
+
+
+*=*=*=**=*=*=*=*=**=*= Test Cases 1: *=*=*=**=*=*=*=*=**=*=
+
+Enter Name: Mina  
+output: Welcome to our chatroom Mina
+
+*=*=*=**=*=*=*=*=**=*= Test Case 2: *=*=*=**=*=*=*=*=**=*=
+ 
+Enter Name: Mina  
+output: user exist!
+Enter Name: Mike
+output: Welcome to our chatroom Mike
+
+*=*=*=**=*=*=*=*=**=*= Test Case 3: *=*=*=**=*=*=*=*=**=*=
+
+input: hello
+output <Mina> hello
+
+*=*=*=**=*=*=*=*=**=*= Test case 4: *=*=*=**=*=*=*=*=**=*=
+
+input : @private Mike
+input: hey!
+output to mike: hey!
+
+*=*=*=**=*=*=*=*=**=*= Test case 5: *=*=*=**=*=*=*=*=**=*=
+
+input: @who
+output: Mina
+
+*=*=*=**=*=*=*=*=**=*= Test Case 6: *=*=*=**=*=*=*=*=**=*=
+
+input: @private Mike
+output: user is busy will connect you once free
+
+*=*=*=**=*=*=*=*=**=*= Test Case 7: *=*=*=**=*=*=*=*=**=*=
+
+input: @end Mike
+output: Mike has left the conversation
+output: you have no one in the private chat.. now your public
+output to 3rd user is waiting to get free
+
+*=*=*=**=*=*=*=*=**=*= Test case 8: *=*=*=**=*=*=*=*=**=*=
+
+input: @private Mina
+input: @private Mike
+input hello
+output: "hello" to Mina, Mike
+
+*=*=*=**=*=*=*=*=**=*= Test case 9: *=*=*=**=*=*=*=*=**=*=
+
+input: @end Mina
+input: @who 
+output Mike
+
+*=*=*=**=*=*=*=*=**=*= Test case 9: *=*=*=**=*=*=*=*=**=*=
+
+input: @private Mina
+input: @end private
+output: private conversation ended
+
+*=*=*=**=*=*=*=*=**=*= Test case 10: *=*=*=**=*=*=*=*=**=*=
+
+input: @who
+output: Mike, Mina
+
+*=*=*=**=*=*=*=*=**=*= Test Case 11: *=*=*=**=*=*=*=*=**=*=
+
+output: enter Name
+input: Mario
+output welcome Mario to our chat room
+output: Chat History
+
+*=*=*=**=*=*=*=*=**=*= Test Case 12: *=*=*=**=*=*=*=*=**=*=
+
+input:" @private Mina
+inputby Mina: hello
+output: hello to public
